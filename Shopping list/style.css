@@ -39,6 +39,15 @@ color: #E37E7F;
 font-size: 16pt;
 }
 
+.appetit:hover{
+    background-color: rgb(91, 97, 106);
+}
+
+a{
+    text-decoration: none;
+    color: #E37E7F;
+}
+
 /*  List    */
 ul{
     text-align: left;
@@ -66,11 +75,14 @@ li{
 
 input[type="checkbox"]:checked + label {
     text-decoration: line-through;
-    color: #cdcbd6;
+    color: #cdcbd6 !important;
 }
 
 li:hover{
     border-top: 2px, white, solid;
     border-bottom: 2px, white, solid;
-    background-color: #625E77;
+    background-color: #625E77 !important;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
 }
