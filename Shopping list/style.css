@@ -60,7 +60,9 @@ ul{
     width: 70%;
     background-color: #88839E;
 }
-ul > li:nth-of-type(even) {background-color: #7A7593;}
+ul > li:nth-of-type(even) {
+    background-color: #7A7593;
+}
 
 li{
     padding: 1em;
