@@ -1,3 +1,7 @@
+*{
+    transition: all .1s ease-in;
+}
+
 body{
     margin: 0;
     background-color: #3B3F45;
@@ -8,6 +12,7 @@ h1{
     padding: 1em;
     padding-bottom: 0.25em;
 }
+
 h4{
     margin: 0;
     padding: 1em;
@@ -65,7 +70,10 @@ ul > li:nth-of-type(even) {
 }
 
 li{
-    padding: 1em;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     font-size: 14pt;
 }
 
@@ -75,16 +83,29 @@ li{
     font-size: 10pt;
 }
 
+.listComment::before{
+    content: "( ";
+}
+
+.listComment::after{
+    content: " )";
+}
+
 input[type="checkbox"]:checked + label {
     text-decoration: line-through;
     color: #cdcbd6 !important;
 }
 
 li:hover{
+    padding-top: 16px;
+    padding-bottom: 18px;
     border-top: 2px, white, solid;
     border-bottom: 2px, white, solid;
     background-color: #625E77 !important;
     border-style: solid;
     border-left: none;
     border-right: none;
+}
+li:active{
+    background-color: #EE8979 !important;
 }
